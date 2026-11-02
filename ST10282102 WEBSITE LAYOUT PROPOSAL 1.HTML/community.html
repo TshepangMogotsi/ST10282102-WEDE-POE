@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | Queens Cookies Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                Queens <span>Cookies</span> Bakery
+            </div>
+
+        </div>
+    </header>
+
+    <nav>
+
+        <div class="container">
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="community-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h1>Our Community</h1>
+            <p>Making our community sweeter.</p>
+        </div>
+
+        <!-- COMMUNITY CARDS -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Supporting Schools</h3>
+                <p>
+                    We support local schools and community
+                    activities through donations and events.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Charity Homes</h3>
+                <p>
+                    We share our baked goods and support
+                    charity homes in our community.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Local Events</h3>
+                <p>
+                    We participate in local events and
+                    community activities.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- COMMUNITY FORM -->
+        <div class="community-form">
+
+            <h2>Get Involved</h2>
+            <p>Would you like to support our community initiatives?</p>
+
+            <form id="community-form">
+
+                <div class="form-group">
+                    <label for="community-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="community-name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="community-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="community-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="community-interest">Area of Interest</label>
+                    <select
+                        id="community-interest"
+                        name="interest"
+                        required>
+                        <option value="">Choose an option</option>
+                        <option value="schools">Supporting Schools</option>
+                        <option value="charity">Charity Homes</option>
+                        <option value="events">Local Events</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Interest
+                </button>
+
+                <p id="community-message" role="status"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>Together, we can make our community sweeter!</p>
+    <p>2026 Queens Cookies Bakery</p>
+</footer>
+
+<script src="community.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Queens Cookies Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                Queens <span>Cookies</span> Bakery
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav>
+
+        <div class="container">
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="thankyou">Thank You</a></li>
+
+                <a href="order.html" class="btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                   Order Online
+</a>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <section class="order-section">
+
+    <h1>Order Online</h1>
+
+    <form id="order-form">
+
+        <!-- STEP 1: CUSTOMER DETAILS -->
+        <h2>Step 1: Customer Details</h2>
+        <i class="fa-solid fa-user"></i>
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="fullName"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required></div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                autocomplete="tel"
+                required>
+        </div>
+
+        <!-- STEP 2: DELIVERY -->
+        <h2>Step 2: Delivery</h2>
+        <i class="fa-solid fa-truck"></i>
+
+        <div class="form-group">
+            <label for="delivery-method">Delivery Method</label>
+
+            <select id="delivery-method" name="deliveryMethod" required>
+                <option value="delivery">Delivery</option>
+                <option value="pickup">Pick Up</option>
+            </select>
+        </div>
+
+        <div class="form-group" id="delivery-address">
+            <label for="address">Delivery Address</label>
+            <textarea
+                id="address"
+                name="address"
+                placeholder="Enter your delivery address"
+                autocomplete="street-address"
+                required></textarea>
+        </div>
+
+        <p>
+            Your personal information should be protected
+            through a properly configured HTTPS connection.
+        </p>
+
+        <!-- STEP 3: PAYMENT -->
+        <h2>Step 3: Payment</h2>
+        <i class="fa-solid fa-credit-card"></i>
+
+        <div class="form-group">
+            <label for="payment">Payment Method</label>
+
+            <select id="payment" name="paymentMethod" required>
+                <option value="card">Credit / Debit Card</option>
+                <option value="eft">EFT</option>
+                <option value="digital">Digital Payment</option>
+            </select>
+        </div>
+
+        <!-- CART SUMMARY -->
+        <h2>Your Order</h2>
+
+        <div id="cart-items">
+            Your basket will appear here.
+        </div>
+
+        <p>
+            <strong>Total: <span id="order-total">R0.00</span></strong>
+        </p>
+
+        <p id="order-message" role="status"></p>
+
+        <button class="btn btn-primary" type="submit">
+            Continue Payment
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ORDER TRACKING SECTION -->
+<section class="tracking-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Track Your Order</h2>
+            <p>
+                Can't wait for your sweet treats?
+                Enter your order number to check your order status.
+            </p>
+        </div>
+
+        <div class="tracking-card">
+
+            <form id="tracking-form">
+
+                <label for="tracking-number">
+                    Enter Your Order Number
+                </label>
+
+                <input
+                    type="text"
+                    id="tracking-number"
+                    placeholder="Example: QC12345678"
+                    required
+                >
+
+                <button type="submit">
+                    Track My Order
+                </button>
+
+            </form>
+
+            <div id="tracking-result" role="status"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="tracking.js"></script>
+</body>
+</html>
+
+<footer>
+    <p>Queens Cookies Bakery</p>
+    <p>Secure Online Ordering</p>
+</footer>
+
+<script src="order.js"></script>
+</body>
+</html>
